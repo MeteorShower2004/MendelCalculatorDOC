@@ -5,25 +5,75 @@
 
    我 *认为* 将这个程序转化为可以被开发者使用的模块是 *没必要* 的，所以我 *不打算* 这么做。
 
-Creating recipes
+
+从最基础的开始
+---------------
+
+最基础的命令就是从1到9的自然数，这个数字将会决定[性状数量]。
+
+.. code-block:: console
+
+    MendelCalculator> 1
+    请输入基因型:
+    第1组(父本)>
+
+输入命令之后，程序将会对其进行必要的检查，保证它符合计算或者执行的要求。
+
+MendelCalculator>1
+请输入基因型:
+第1组(父本)>aa
+第2组(母本)>aa
+父本配子:
+[0][a]=1
+母本配子:
+[0][a]=1
+子代:
+[0][aa]=1
+[信息]输出完毕，共使用13.405毫秒！
+MendelCalculator>
+
+命令列表
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+.. list-table:: 命令列表
+    :widths: 15 10 30
+    :header-rows: 1
 
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
-.. code-block:: python
-
-    >>> import lumache
-    >>> lumache.get_random_ingredients()
-    ['shells', 'gorgonzola', 'parsley']
-
+    * - 命令
+      - 功能
+      - 备注
+    * - exit
+      - 退出此程序
+      -
+    * - save
+      - 将上一次计算的结果保存为文件
+      - 如果未进行任何计算，则会提示错误
+    * - read
+      - 读取文件，并将其中的数据覆盖在之前的数据上
+      - 如果未读取任何存档或者是读取后被覆盖，则有可能会提示错误
+    * - count
+      - 对读取的存档中的数据进行计算
+      -
+    * - gen-df
+      - 针对某一个存档生成[配子或子代存活率文件]
+      - 目前功能还未完成，可以生成，但是不能读取和计算
+    * - gen-result
+      - 针对计算结果生成表格.xlsx文件
+      - 如果没有读取存档或者进行计算会提示错误
+    * - list-saves
+      - 列出存档目录下的所有存档
+      -
+    * - list-saves-s
+      - 在list-saves添加关键词搜索功能
+      - 不支持以下搜索方法：(假设你要寻找demo存档)关键词> dm(结果列表中不会出现demo存档)
+    * - upd-save
+      - 由于不同的存档生成器的存在，目前存档分为v1.0和v1.1两个版本，此命令可以将v1.0的存档转化为v1.1的存档
+      -
+    * - clear-cache
+      - 由于使用了lru_cache装饰器 缓存返回值来减少计算所花的时间，
+        所以这有可能导致此程序占用内存过大。
+        此命令用于清除所有函数运行导致的缓存
+      - 根据测试，这个命令似乎并不会减少多少的内存占用，但是却会使运行时间加长（不同的输入会有不同程度的影响）
+    * - cls
+      - 系统命令，用于清屏
+      - 仅限windows.

@@ -8,8 +8,11 @@ I'm so sorry that my English is so poor that I can't translate these document to
 
 当然，这是很理论化的，请不要当真！
 
-你可以在 :doc:`installation` 章节了解如何安装和维护此程序。
-在 :doc:`usage` 章节了解此程序的使用方法。
+如果你对这个项目有兴趣，那么最开始你需要浏览[ :doc:`background` ]先了解一些背景知识。
+
+你可以在[ :doc:`installation` ]章节了解如何安装和维护此程序。
+
+在[ :doc:`usage` ]章节了解此程序的使用方法。
 
 
 .. note::
@@ -21,6 +24,7 @@ Contents
 
 .. toctree::
 
+    background
     installation
     usage
     api
