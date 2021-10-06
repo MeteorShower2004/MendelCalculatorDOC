@@ -13,15 +13,15 @@
 
 / *[存档名字]*
 
-├ / gene_pool
+    / gene_pool
 
-|   ├ parents.json
+        parents.json
 
-├ / result
+    / result
 
-├ *[存档名字]*.json
+    *[存档名字]*.json
 
-├ die_filter.json
+    die_filter.json
 
 .. list-table:: 各个组成的作用与含义
     :widths: 15 10 30
