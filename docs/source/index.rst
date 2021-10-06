@@ -1,3 +1,4 @@
+=============================================
 Welcome to MendelCalculator's documentation!
 =============================================
 欢迎阅读孟德尔计算器的说明文档！
@@ -19,6 +20,11 @@ I'm so sorry that my English is so poor that I can't translate these document to
 
    此项目仍在开发中，所以文档中的内容可能有所滞后！
 
+.. note::
+
+   凡例：
+        在演示部分中，斜体表示键盘键入的值，带方括号[]的斜体表示注释，
+
 Contents
 --------
 
@@ -27,7 +33,7 @@ Contents
     background
     installation
     usage
-    api
+    saves
     debug
     fix_files
     connect_me
