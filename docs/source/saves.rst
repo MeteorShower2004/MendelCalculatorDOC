@@ -9,19 +9,19 @@
 -------------
 在即将发布的1.1正式版中，存档目录与1.0一致。
 
-结构：
+存档目录结构：
 
 / *[存档名字]*
 
-    / gene_pool
+    * / gene_pool
 
-        parents.json
+        * parents.json
 
-    / result
+    * / result
 
-    *[存档名字]*.json
+    * *[存档名字]*.json
 
-    die_filter.json
+    * die_filter.json
 
 .. list-table:: 各个组成的作用与含义
     :widths: 15 10 30
@@ -73,4 +73,16 @@
 存档使用json文件
 -------------------------
 
+.. note::
+    施工中。。。
 
+
+
+
+json语法错误解决方案
+-------------------------
+
+.. note::
+    施工中。。。
+
+https://www.json.cn/
