@@ -119,82 +119,82 @@
 
 .. confval:: save
 
-.. warning::
+   .. warning::
 
-    / \\ : \* ? " < > | 这些符号在Windows当中不能作为文件夹或文件的名字！
+      / \\ : \* ? " < > | 这些符号在Windows当中不能作为文件夹或文件的名字！
 
-下文为实例：
+   下文为实例：
 
-    MendelCalculator> *save*
+      MendelCalculator> *save*
 
-    <保存失败：没有进行任何的计算！>
+      <保存失败：没有进行任何的计算！>
 
-    *[未经计算直接试图保存会输出错误。]*
+      *[未经计算直接试图保存会输出错误。]*
 
-    MendelCalculator> *1*
+      MendelCalculator> *1*
 
-    *[省略]*
+      *[省略]*
 
-    MendelCalculator> *save*
+      MendelCalculator> *save*
 
-    请输入存档名字： *example*
+      请输入存档名字： *example*
 
-    请输入描述：*[如果没有描述可以直接回车]*
+      请输入描述：*[如果没有描述可以直接回车]*
 
-    *[如果成功生成一个存档，那么会提示以下信息（文件的路径可能有所不同）]*
+      *[如果成功生成一个存档，那么会提示以下信息（文件的路径可能有所不同）]*
 
-    <[.../saves/example]已成功被创建!> *[存档一般保存在与mendel.exe同个目录下的saves目录中]*
+      <[.../saves/example]已成功被创建!> *[存档一般保存在与mendel.exe同个目录下的saves目录中]*
 
-    <[.../saves/example/gene_pool]已成功被创建!>
+      <[.../saves/example/gene_pool]已成功被创建!>
 
-    <[.../saves/example/result]已成功被创建!>
+      <[.../saves/example/result]已成功被创建!>
 
-    <[.../saves/example/example.json]已成功被创建!>
+      <[.../saves/example/example.json]已成功被创建!>
 
-    <[.../saves/example/gene_pool/parents.json]已成功被创建!>
+      <[.../saves/example/gene_pool/parents.json]已成功被创建!>
 
 
 .. confval:: read
 
-此命令将会从mendel.exe所在的文件夹下的saves文件夹中读取存档，
+   此命令将会从mendel.exe所在的文件夹下的saves文件夹中读取存档，
 
-.. note::
+   .. note::
 
-    在MendelCalculator v1.1 Preview 1中，如果saves文件夹不存在，则有可能在输入存档名之后导致崩溃。
+      在MendelCalculator v1.1 Preview 1中，如果saves文件夹不存在，则有可能在输入存档名之后导致崩溃。
 
-下文为实例：
+   下文为实例：
 
-    MendelCalculator> *read*
+      MendelCalculator> *read*
 
-    请输入存档名字：*demo*
+      请输入存档名字：*demo*
 
-    <正在读取目录[.../saves/demo]...>
+      <正在读取目录[.../saves/demo]...>
 
-    作者[MeteorShower2004]
+      作者[MeteorShower2004]
 
-    注释[For testing.]
+      注释[For testing.]
 
-    <正在读取基因库文件[demo/parents.json]...>
+      <正在读取基因库文件[demo/parents.json]...>
 
-    <已成功载入基因库文件[demo/gene-pool/parents.json]!>
+      <已成功载入基因库文件[demo/gene-pool/parents.json]!>
 
-    <亲本[[Aa, Aa]]，等位基因数[1]>
+      <亲本[[Aa, Aa]]，等位基因数[1]>
 
 .. confval:: count
 
-此命令用于在读取存档后
+   此命令用于在读取存档后
 
-.. note::
+   .. note::
 
-    只有在读取存档后才能使用count命令，另外，在读取存档后马上使用计算功能，会覆盖读取的数据。
+      只有在读取存档后才能使用count命令，另外，在读取存档后马上使用计算功能，会覆盖读取的数据。
 
-下文为实例：
+   下文为实例：
 
-    MendelCalculator> *count*
+      MendelCalculator> *count*
 
-    子代:
+      子代:
 
-    [0][AA]=1 [Aa]=2 [aa]=1
+      [0][AA]=1 [Aa]=2 [aa]=1
 
 
 使用cmd.exe调用孟德尔计算器
@@ -233,17 +233,17 @@
 
 .. confval:: 创建一个.bat文件
 
-在你想要的地方右键-新建-文本文档。
+   在你想要的地方右键-新建-文本文档。
 
-将名字的后缀改为.bat*[看不到后缀名请自行百度。]*
+   将名字的后缀改为.bat*[看不到后缀名请自行百度。]*
 
-系统会提示"可能会导致文件不可用"，直接点"是"。
+   系统会提示"可能会导致文件不可用"，直接点"是"。
 
 .. confval:: 键入命令
 
-对着这个.bat文件右键-编辑
+   对着这个.bat文件右键-编辑
 
-会用记事本打开这个文件，在里面输入：
+   会用记事本打开这个文件，在里面输入：
 
 .. code-block:: console
 
@@ -255,7 +255,7 @@
 
 .. confval:: 运行
 
-直接双击文件运行。
+   直接双击文件运行。
 
 问题
 >>>>>>>>
