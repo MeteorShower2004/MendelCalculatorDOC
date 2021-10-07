@@ -10,4 +10,4 @@ I'm so sorry that my English is so poor that I can't translate these document to
 
 官方说明文档：
 
-https://mendelcalculatordoc.readthedocs.io/zh_CN/stable/
+https://mendelcalculatordoc.readthedocs.io/zh_CN/latest/
